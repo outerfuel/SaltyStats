@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <title>SaltyStats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <p> Total Matches Seen: {{ stats.total_matches }} </p>
+            <p> W/L: {{ stats.wins }}/{{ stats.losses }}</p>
+            <p> Total Bets: {{ "{:,}".format(stats.total_bet) }} </p>
+            <p> Largest Bet: {{ "{:,}".format(stats.largest_bet) }}</p>
+            <p> Average Bet: {{ "{:,}".format(stats.avg_bet) }}</p>
+            <p> Largest ratio: {{ stats.big_ratio }} </p>
+        </div>
+    </div>
+</body>
+
+</html>

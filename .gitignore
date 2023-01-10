@@ -1,0 +1,9 @@
+# ignore ALL .log files
+*.log
+config.py
+
+
+# ignore ALL files in ANY directory named temp
+__pycache__/
+.idea/
+venv/
