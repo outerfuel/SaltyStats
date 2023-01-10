@@ -12,5 +12,4 @@ WORKDIR /app
 # install the dependencies and packages in the requirements file
 RUN pip install -r requirements.txt
 
-# configure the container to run in an executed manner
-ENTRYPOINT ["/app/entrypoint.sh"]
+CMD [ "/bin/sh", "./entrypoint.sh" ]
